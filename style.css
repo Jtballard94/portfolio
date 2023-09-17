@@ -1,0 +1,67 @@
+
+/* body, the flow of the overall website, using flex-direction to make it columns */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+}
+
+
+/* Create the header */
+
+.header{
+    background-color: #1f2937;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .logo{
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: 900;
+    color: #F9FAF8;
+
+
+    justify-self: flex-start;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  .links{
+    font-family: monospace;
+   
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    padding-right: 30px;
+  }
+
+a{
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+/* Header is looking good...well at least ok */
+
+/* Start on hero(first actual section, guessing that what they call the hero) */
+
+.hero{
+    display: flex;
+    height: 600px;
+    justify-content: space-between;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
