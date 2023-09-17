@@ -93,10 +93,11 @@ a{
     text-decoration: none;
     
 }
-img{
+img#code{
     flex: 1 2 0;
     max-width: 300px;
     height: auto;
+    border-radius: 25px;
 }
 
 /* The hero section is basically done. Im getting pretty sleepy so i accepted it was good enough for now */
