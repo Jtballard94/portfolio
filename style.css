@@ -3,8 +3,10 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #1f2937;
-    margin: 0 100px;
+    margin: 0;
+    font-family: monospace;
+    /* background-color: #1f2937;
+    margin: 0 100px; */
 }
 
 
@@ -12,9 +14,10 @@ body{
 
 .header{
     background-color: #1f2937;
-    border-radius: 10px;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
   }
  
   .logo{
@@ -22,13 +25,9 @@ body{
     font-family: monospace;
     font-weight: 900;
     color: #F9FAF8;
-
-
-    justify-self: flex-start;
-    align-items: center;
   }
 
-  .links{
+  .header .links{
     font-family: monospace;
    
     display: flex;
@@ -47,67 +46,189 @@ a#page-link{
 /* Start on hero(first actual section, guessing that what they call the hero) */
 
 .hero{
+    background-color: #1f2937;
+    font-family: monospace;
+    color: #F9FAF8;
     display: flex;
-    justify-content: space-between;
+    /* flex-direction: column; */
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     min-height: 300px;
     
-    /* font-family: monospace;
-    color: #F9FAF8; */
 }
-
 
 .left{
     display: flex;
     flex-direction: column;
-    font-size: 18px;
-    font-family: monospace;
-    /* font-weight: 900; */
-    color: #F9FAF8;
+    align-items: center;
+    max-width: 400px;
+    flex: 2 0 auto;
 }
 
 .heading{
-    align-items: flex-end;
-    font-size: 24px;
-    font-family: monospace;
-    font-weight: 900;
-    margin: 0;
+       margin-right: auto;
+       font-size: 24px;
+       font-family: monospace;
+       font-weight: 900;
+       color: #F9FAF8;
+
 }
 
-.subject{
-    max-width: 350px;
-}
 
+img#code{
+    max-height: 200px;
+     width: auto;
+     border-radius: 25px;
+}
 
 .button{
-    background-color: #F9FAF8;
-    border-radius: 5px;
-    border: 0;
     width: 100px;
-    height: 25px;
-    padding: 0;
-  }
+    border-radius: 10px;
+    margin-top: auto;
+}
+
 a{
-    color: #1f2937;
     text-decoration: none;
-    
-}
-img#code{
-    flex: 1 2 0;
-    max-width: 300px;
-    height: auto;
-    border-radius: 25px;
+    color: #1f2937;
 }
 
-/* The hero section is basically done. Im getting pretty sleepy so i accepted it was good enough for now */
 
-/* the info section begins here */
+/* Info section */
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 75px;
+}
+
+.photo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+p {
+    font-size: 24px;
+    font-weight: 800px;
+    margin: 15px  auto;
+    align-items: flex-end;
+}
+
+.photo img{
+    max-height: 200px;
+    border-radius: 25PX;
+    max-width: 200px;
+
+} 
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 200px;
+    max-height: auto;   
+}
+
+.caption > p{
+ 
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: #a7aab1;
+    justify-content: center;
+  
+}
+
+.quote{
+    display: flex;
+    font-size: 20px;
+    font-family: monospace;
+    max-width: 550px;
+    margin: 15px auto;
+}
+
+.author{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+   padding-left: 100px;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+/* Action */
 
 
 
 
 
+.action{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 50px;
+    background-color: rgb(0, 119, 255);
+    border-radius: 10px;
+}
+
+.text{
+    margin: auto 15px;
+    flex: 2;
+    max-width: 300px ;
+}
+
+#one{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#two{
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.sign-up{
+    display: flex;
+    align-items: center;
+    min-width: 50px;
+    padding: 10px;
+    margin: 30 30 auto auto;
+}
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    max-height: 25px;
+    min-height: 25px;
+    margin-bottom: 2px;
+    background-color: #a7aab1;
+    padding-top: 11px;
+    font-size: 8px;
+    font-family: monospace;
+
+}
+
+/* #footer{
+    font-size: 8px;
+    font-family: monospace;
+  
+} */
 
 
 
+ /* p > #1{
+    font-size: 10px;
+    font-family: monospace;
+}
+
+p#2{
+    font-size: 5px;
+    font-family: monospace;
+} */
